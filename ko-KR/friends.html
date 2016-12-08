@@ -8,7 +8,7 @@ title:  Rust의 친구들 &middot; Rust 프로그래밍 언어
   <h1>Rust의 친구들</h1>
   <h2>(현업에서 Rust를 사용하는 회사 및 단체들)</h2>
 
-  {% for user in site.data.users %}
+  {% for user in site.data.users.shuffle %}
     {% assign mod = forloop.index | minus:1 | modulo:3 %}
     {% if mod != 0 %}
     {% continue %}

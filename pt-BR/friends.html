@@ -8,7 +8,7 @@ title:  Amigos do Rust &middot; A linguagem de programação Rust
   <h1>Amigos do Rust</h1>
   <h2>(Organizações usando Rust em produção)</h2>
 
-  {% for user in site.data.users %}
+  {% for user in site.data.users.shuffle %}
     {% assign mod = forloop.index | minus:1 | modulo:3 %}
     {% if mod != 0 %}
     {% continue %}

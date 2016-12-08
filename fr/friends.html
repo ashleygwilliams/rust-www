@@ -8,7 +8,7 @@ title:  Amis de Rust &middot; Rust, le langage de programmation
   <h1>Amis de Rust</h1>
   <h2>(Entreprises utilisant Rust en environnement de production)</h2>
 
-  {% for user in site.data.users %}
+  {% for user in site.data.users.shuffle %}
     {% assign mod = forloop.index | minus:1 | modulo:3 %}
     {% if mod != 0 %}
     {% continue %}
